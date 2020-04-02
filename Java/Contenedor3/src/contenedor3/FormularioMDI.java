@@ -15,6 +15,7 @@ public class FormularioMDI extends javax.swing.JFrame {
      * Creates new form FormularioMDI
      */
     private MantenimientoAlumnos2 nuevaVentana2;
+    private MantenimientoAlumnos nuevaVentana1;
     public FormularioMDI() {
         initComponents();
     }
@@ -65,6 +66,11 @@ public class FormularioMDI extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("Mantenimiento Maestors");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
@@ -115,6 +121,12 @@ public class FormularioMDI extends javax.swing.JFrame {
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+           nuevaVentana1 = new MantenimientoAlumnos();
+        jDesktopPane1.add (nuevaVentana1);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
