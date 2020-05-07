@@ -16,6 +16,12 @@ public class POO {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    }
+        persona objPersona = new persona();
+        objPersona.crearPersona("Eduardo", "01-02-2000", 20);
+        System.out.println("Persona creada");
+        System.out.println("Nombre:  " + objPersona.getNombre());
+        System.out.println("Fecha de Nacimiento:  " + objPersona.getFechaNacimiento());
+        System.out.println("Edad: " + objPersona.getEdad());
+     }
     
 }
