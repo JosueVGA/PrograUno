@@ -25,7 +25,7 @@ public class Alumno extends persona {
         this.matricula = matricula;
     }
    public void mostrarDatos() {
-       JOptionPane.showMessageDialog(null,"ALUMNO \n Nombre: " +  getNombre() + " Fecha Nacimiento: " + getFechaNacimiento());
+       JOptionPane.showMessageDialog(null,"ALUMNO \n Nombre: " +  getNombre() + " Fecha Nacimiento: " + getFechaNacimiento()+"Matricula: "+ getMatricula());
    } 
   
 }
