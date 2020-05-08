@@ -5,6 +5,8 @@
  */
 package poo;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author SOPORTE
@@ -16,12 +18,12 @@ public class POO {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        persona objPersona = new persona();
-        objPersona.crearPersona("Eduardo", "01-02-2000", 20);
-        System.out.println("Persona creada");
-        System.out.println("Nombre:  " + objPersona.getNombre());
-        System.out.println("Fecha de Nacimiento:  " + objPersona.getFechaNacimiento());
-        System.out.println("Edad: " + objPersona.getEdad());
+        persona objPersona = new persona("Eduardo", "2000-01-01", 20);
+      //  JOptionPane.showMessageDialog(null, objPersona.getNombre()+" "+ objPersona.getFechaNacimiento()+" "+ objPersona.getEdad());
+        // persona objPersona2 = new persona("Juan Pueblo", "2002-01-01", 18);
+        //JOptionPane.showMessageDialog(null, objPersona2.getNombre()+" "+ objPersona2.getFechaNacimiento()+" "+ objPersona2.getEdad());
+        JOptionPane.showMessageDialog(null,objPersona.sumaNumeros(15, 15));
+        JOptionPane.showMessageDialog(null,objPersona.sumaNumeros(15.25, 15.25));
      }
     
 }
